@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "thaifin"
+version = "0.1.0"
+description = ""
+authors = ["Nutchanon Ninyawee <me@nutchanon.org>"]
+license = "ISC"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+beautifulsoup4 = "^4.9.1"
+requests = "^2.24.0"
+openpyxl = "^3.0.4"
+pandas = "^1.0.5"
+lxml = "^4.5.1"
+furl = "^2.1.0"
+
+[tool.poetry.dev-dependencies]
+jupyter = "^1.0.0"
+pytest = "^5.4.3"
+pandas = "^1.0.5"
+tqdm = "^4.47.0"
+openpyxl = "^3.0.4"
+lxml = "^4.5.1"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
