@@ -125,3 +125,4 @@ dmypy.json
 
 # rough test
 playground
+.idea/
