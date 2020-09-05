@@ -63,6 +63,50 @@ stock.yearly_dataframe
 
 ```
 
+### Columns Data
+
+```python
+class FinancialSheet(BaseModel):
+    SecurityID: Optional[int]
+    Fiscal: Optional[int]
+    Quarter: Optional[int]
+    Cash: Optional[float]
+    DA: Optional[float]
+    DebtToEquity: Optional[float]
+    Equity: Optional[float]
+    EarningPerShare: Optional[float]
+    EarningPerShareYoY: Optional[float]
+    EarningPerShareQoQ: Optional[float]
+    GPM: Optional[float]
+    GrossProfit: Optional[float]
+    NetProfit: Optional[float]
+    NetProfitYoY: Optional[float]
+    NetProfitQoQ: Optional[float]
+    NPM: Optional[float]
+    Revenue: Optional[float]
+    RevenueYoY: Optional[float]
+    RevenueQoQ: Optional[float]
+    ROA: Optional[float]
+    ROE: Optional[float]
+    SGA: Optional[float]
+    SGAPerRevenue: Optional[float]
+    TotalDebt: Optional[float]
+    DividendYield: Optional[float]
+    BookValuePerShare: Optional[float]
+    Close: Optional[float]
+    MKTCap: Optional[float]
+    PriceEarningRatio: Optional[float]
+    PriceBookValue: Optional[float]
+    EVPerEbitDA: Optional[float]
+    EbitDATTM: Optional[float]
+    PaidUpCapital: Optional[float]
+    CashCycle: Optional[float]
+    OperatingActivities: Optional[float]
+    InvestingActivities: Optional[float]
+    FinancingActivities: Optional[float]
+    Asset: Optional[float]
+```
+
 ## Disclaimer
 
 เราไม่รับประกันความเสียหายใดๆทั้งสิ้นที่เกิดจาก แหล่งข้อมูล, library, source code,sample code, documentation, library dependencies และอื่นๆ
