@@ -286,7 +286,7 @@ python-versions = ">=2.7"
 name = "et-xmlfile"
 version = "1.0.1"
 description = "An implementation of lxml.xmlfile for the standard library"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 
@@ -435,7 +435,7 @@ xdg_home = ["appdirs (>=1.4.0)"]
 name = "jdcal"
 version = "1.4.1"
 description = "Julian dates from proleptic Gregorian and Julian calendars."
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 
@@ -748,7 +748,7 @@ dev = ["pre-commit"]
 name = "openpyxl"
 version = "3.0.6"
 description = "A Python library to read/write Excel 2010 xlsx/xlsm files"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6,"
 
@@ -1296,7 +1296,7 @@ full = ["python-Levenshtein", "pandas"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "86220147d0693245bb2306f72a477861f8bf8e307c0fe15bc186aaae61a55724"
+content-hash = "3ce2c7f1f3327ea98737349e4ab9b43ef394ede21dac93f63f203aa81e120c7d"
 
 [metadata.files]
 appdirs = [
