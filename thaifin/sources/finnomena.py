@@ -2,6 +2,8 @@ from typing import Dict
 from typing import List
 from typing import Optional
 
+from cachetools import cached, TTLCache
+from tenacity import retry, stop_after_attempt, wait_exponential
 import requests
 
 from pydantic import BaseModel
@@ -57,8 +59,9 @@ class FinancialSheetsResponse(BaseResponse):
     data: List[FinancialSheet]
 
 
+@cached(cache=TTLCache(maxsize=12345, ttl=24 * 60 * 60))
+@retry(stop=stop_after_attempt(3), wait=wait_exponential(multiplier=1, min=4, max=10), reraise=True)
 def get_financial_sheet(securityID, fiscal=2009):
-
     url = "https://www.finnomena.com/fn3/api/stock/financial"
 
     querystring = {"securityID": str(securityID), "fiscal": str(fiscal)}
@@ -94,8 +97,9 @@ class StockInfosResponse(BaseResponse):
     data: List[StockInfo]
 
 
+@cached(cache=TTLCache(maxsize=1, ttl=24 * 60 * 60))
+@retry(stop=stop_after_attempt(3), wait=wait_exponential(multiplier=1, min=4, max=10), reraise=True)
 def get_stock_list() -> StockInfosResponse:
-
     url = "https://www.finnomena.com/fn3/api/stock/list"
 
     payload = ""
