@@ -2,6 +2,8 @@
 
 > The same author as [PythaiNAV](https://github.com/CircleOnCircles/pythainav)
 
+ [**Documentation**](https://circleoncircles.github.io/thaifin/thaifin.html)
+
 A Python library for access thai stock fundamental data up to 10+ years. 
 
 - faster and lesser load to server with [cachetools](https://pypi.org/project/cachetools/)
