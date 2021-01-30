@@ -17,8 +17,7 @@ A Python library for access thai stock fundamental data up to 10+ years.
 ```bash
 # Pick one ✨
 $ pip install thaifin
-$ pipenv install thaifin
-$ poetry add thaifin
+$ conda install thaifin
 ```
 
 ```python
