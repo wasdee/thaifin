@@ -18,9 +18,7 @@ jobs:
           version: 1.1.4
           virtualenvs-create: false
           virtualenvs-in-project: false
-      - name: set token
-        env:
-          PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
-        run: poetry config pypi-token.pypi $PYPI_TOKEN
       - name: publish to pypi
+        env:
+          POETRY_PYPI_TOKEN_PYPI: ${{ secrets.PYPI_TOKEN }}
         run: poetry publish --build
