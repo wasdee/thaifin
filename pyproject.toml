@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "thaifin"
-version = "0.1.5"
+version = "0.2.0"
 description = "A Python library for access thai stock fundamental data up to 10+ years."
 authors = ["Nutchanon Ninyawee <me@nutchanon.org>"]
 license = "ISC"
