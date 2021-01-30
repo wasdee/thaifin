@@ -4,6 +4,10 @@
 
 A Python library for access thai stock fundamental data up to 10+ years. 
 
+- faster and lesser load to server with [cachetools](https://pypi.org/project/cachetools/)
+- more robust with auto retry with expo wait via [tenacity](https://github.com/jd/tenacity)
+- better than nothing docs with [pdoc](https://pdoc.dev/)
+
 <a href="https://imgflip.com/i/4dxnzi"><img src="https://i.imgflip.com/4dxnzi.jpg" title="made at imgflip.com"/></a><div></div>
 
 ไพทอนไลบารี่สำหรับเข้าถึงข้อมูลปัจจัยพื้นฐานของหุ้นในตลาดไทยมากถึง 10+ ปี
